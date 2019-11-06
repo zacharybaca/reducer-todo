@@ -1,12 +1,12 @@
-const initialState = {
+export const initialState = {
     todos: [
         {
-            item: 'Learn about reducers',
+            title: 'Learn about reducers',
             completed: false,
             id: 3892987589
     },
         {
-            item: 'Learn Redux',
+            title: 'Learn Redux',
             completed: false,
             id: 3892987590
         }
@@ -14,7 +14,7 @@ const initialState = {
 }
 
 
-const reducer = (state, action) => {
+export const reducer = (state, action) => {
     switch (action.type) {
         default:
             return state;
